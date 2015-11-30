@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+org.jboss.tools.openshift.ApplicationId=565659150c1e66ed6f00009d
+org.jboss.tools.openshift.ApplicationName=vitormb
+org.jboss.tools.openshift.Connection=https\://vmartinsborges%40gmail.com@
+org.jboss.tools.openshift.DeployFolder=webapps
+org.jboss.tools.openshift.Domain=comicstoreweb
+org.jboss.tools.openshift.RemoteName=openshift
