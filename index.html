@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+<title>Login ComicStoreWeb</title>
+</h:head>
+<h:body class="jumbotron">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<div class="jumbotron">
+  <h1>Bem Vindo à ComicStore</h1>
+  <p>Plataforma de Serviço para Lojas de Quadrinhos e Jogos eletrônicos.</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Aprenda mais</a></p>
+<h:messages/>
+<center>
+<img src="http://uxrepo.com/static/icon-sets/windows/png32/128/000000/marvel-shield-128-000000.png"> </img>
+<h:form class="form-horizontal">
+  <div class="control-group">
+    <h:outputLabel class="control-label" name="userID" for="inputlogin" value="UserID"/>
+    <div class="controls">
+      <h:inputText class="form-control" id="inputlogin" style="width:200px" type="text" pt:placeholder="Digite seu login..." value="#{flmb.fl.userID}" />
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <label class="control-label" for="inputPassword">Senha</label>
+    <div class="controls">
+      <h:inputText class="form-control" style="width:200px" id="inputPassword" pt:type="password" pt:placeholder="Digite a sua senha..." value="#{flmb.fl.senha}" />
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox"><input type="checkbox" /> Lembrar senha</label>
+     
+      <h:commandButton class="btn btn-primary"   action="#{flmb.validaLogin(flmb.fl)}" value="Acessar"></h:commandButton>
+      
+      
+    </div>
+  </div>
+</h:form>
+<p></p>
+<div>
+	<ls value="Desenvolvedores">
+		<ul>Felipe de Souza RA: 1220128</ul>
+		<ul>Gustavo Ramos de Lima RA: 1220179</ul>
+		<ul>Vítor Martins Borges RA: 1220391</ul>
+		
+	</ls>
+</div>
+</center>	
+</div>	
+</h:body>
+</html>
